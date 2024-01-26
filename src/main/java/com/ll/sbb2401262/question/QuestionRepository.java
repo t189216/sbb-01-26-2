@@ -1,5 +1,6 @@
-package com.ll.sbb2401262;
+package com.ll.sbb2401262.question;
 
+import com.ll.sbb2401262.question.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
