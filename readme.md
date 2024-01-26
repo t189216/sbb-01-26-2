@@ -7,3 +7,7 @@ question_list.html
 
 question_detail.html
 ![img.png](img.png)
+
+#### 2-16 : 경고창
+form_errors.html
+![img_2.png](img_2.png)
