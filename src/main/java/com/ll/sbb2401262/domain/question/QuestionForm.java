@@ -1,4 +1,4 @@
-package com.ll.sbb2401262.question;
+package com.ll.sbb2401262.domain.question;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

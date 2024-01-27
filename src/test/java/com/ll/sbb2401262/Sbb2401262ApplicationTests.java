@@ -1,6 +1,6 @@
 package com.ll.sbb2401262;
 
-import com.ll.sbb2401262.question.QuestionService;
+import com.ll.sbb2401262.domain.question.QuestionService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

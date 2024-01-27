@@ -1,6 +1,6 @@
-package com.ll.sbb2401262.question;
+package com.ll.sbb2401262.domain.question;
 
-import com.ll.sbb2401262.answer.AnswerForm;
+import com.ll.sbb2401262.domain.answer.AnswerForm;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;

@@ -1,4 +1,4 @@
-package com.ll.sbb2401262.answer;
+package com.ll.sbb2401262.domain.answer;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Getter;

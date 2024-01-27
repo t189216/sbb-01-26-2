@@ -1,7 +1,7 @@
-package com.ll.sbb2401262.answer;
+package com.ll.sbb2401262.domain.answer;
 
-import com.ll.sbb2401262.question.Question;
-import com.ll.sbb2401262.question.QuestionService;
+import com.ll.sbb2401262.domain.question.Question;
+import com.ll.sbb2401262.domain.question.QuestionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
