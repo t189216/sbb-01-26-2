@@ -1,37 +1,24 @@
 package com.ll.sbb2401262;
 
-import com.ll.sbb2401262.answer.Answer;
-import com.ll.sbb2401262.answer.AnswerRepository;
-import com.ll.sbb2401262.question.Question;
-import com.ll.sbb2401262.question.QuestionRepository;
+import com.ll.sbb2401262.question.QuestionService;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-import java.time.LocalDateTime;
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @SpringBootTest
 class Sbb2401262ApplicationTests {
 
     @Autowired
-    private QuestionRepository questionRepository;
-
-    @Autowired
-    private AnswerRepository answerRepository;
+    private QuestionService questionService;
 
     @Test
+    @DisplayName("test1")
     void test1() {
-        Optional<Question> oq = this.questionRepository.findById(1);
-        assertTrue(oq.isPresent());
-        Question q = oq.get();
-
-        Answer a = new Answer();
-        a.setContent("답변 1");
-        a.setQuestion(q);
-        a.setCreateDate(LocalDateTime.now());
-        this.answerRepository.save(a);
+        for (int i = 1; i <= 300; i++) {
+            String subject = String.format("테스트 데이터입니다:[%03d]", i);
+            String content = "내용 X";
+            this.questionService.create(subject, content);
+        }
     }
 }
