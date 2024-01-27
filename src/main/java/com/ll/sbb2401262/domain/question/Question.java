@@ -1,6 +1,7 @@
 package com.ll.sbb2401262.domain.question;
 
 import com.ll.sbb2401262.domain.answer.Answer;
+import com.ll.sbb2401262.domain.user.SiteUser;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -26,4 +27,7 @@ public class Question {
 
     @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE)
     private List<Answer> answerList;
+
+    @ManyToOne
+    private SiteUser author;
 }
